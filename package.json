@@ -1,0 +1,17 @@
+{
+  "name": "wakaruland-app",
+  "version": "1.0.0",
+  "description": "WakaruLand Menubar Application",
+  "main": "main.js",
+  "dependencies": {
+    "menubar": "*"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.2.0",
+    "electron-prebuilt": "^1.4.5"
+  },
+  "scripts": {
+    "build": "electron-packager . WakaruLand --platform=darwin --arch=x64 --version=1.4.5 --icon=Icon.icns",
+    "start": "electron ."
+  }
+}
