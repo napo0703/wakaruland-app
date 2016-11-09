@@ -27,11 +27,29 @@ const ts = linda.tuplespace("masuilab");
 
 linda.io.on("connect", () => {
   console.log("connect Linda!!");
+  const cancel_id = ts.read({wakaruland: "reaction", from: my_name}, (err, tuple) => {
+    const img_url = textToImgUrl(tuple.data.value);
+    const reaction_unix_time = Math.floor(new Date(tuple.data.time).getTime() / 1000);
+    const now_unix_time = Math.floor(new Date().getTime() / 1000);
+    const display = (reaction_unix_time + tuple.data.display) - now_unix_time;
+    if (img_url == "" || display < 2 || display == "") {
+      const reaction_style = "background:url('') center center no-repeat; background-size:contain";
+      document.getElementById("console_reaction_img").setAttribute("style", reaction_style);
+    } else {
+      const reaction_style = "background:url('" + textToImgUrl(tuple.data.value) + "') center center no-repeat; background-size:contain";
+      document.getElementById("console_reaction_img").setAttribute("style", reaction_style);
+      withdrawReaction(my_name, tuple.data.display);
+    }
+    setTimeout(() => {
+      ts.cancel(cancel_id);
+    }, 2000);
+  });
+
   ts.watch({wakaruland: "reaction", from: my_name}, (err, tuple) => {
     const reaction_style = "background:url('" + textToImgUrl(tuple.data.value) +"') center center no-repeat; background-size:contain";
     document.getElementById("console_reaction_img").setAttribute("style", reaction_style);
     withdrawReaction(my_name, tuple.data.display);
-  })
+  });
 });
 
 // テキストからSVG画像を作成
@@ -324,3 +342,7 @@ document.getElementById("image_url_text_box").addEventListener("keypress", funct
     addStampFromTextBox();
   }
 }, false);
+
+document.getElementById("reload_button").addEventListener("click", function () {
+  location.reload();
+});
