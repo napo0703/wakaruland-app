@@ -1,21 +1,22 @@
 let my_name = "@test";
 const default_icons = [
-  "https://i.gyazo.com/f1b6ad7000e92d7c214d49ac3beb33be.png",
+  "",
   "https://i.gyazo.com/f461f7b9924dbc41ea5a9c745a45e34d.png",
   "https://i.gyazo.com/1fdfa88d9051c938a8dd9b0d28d714f4.png",
-  "https://i.gyazo.com/22984674b6d0cbb46d781a70f420fbe4.png",
-  "https://i.gyazo.com/6b03c00625edc66db10d4e5f5d57ae3d.png",
-  "https://i.gyazo.com/1bc0ae9981d968a5014ebc5bd604b07e.png",
-  "https://i.gyazo.com/67e6b6b0a9af872a47576f39d6edf11f.png",
-  "https://i.gyazo.com/5beaf5e32f46a574106679b484a0546b.png",
-  "https://i.gyazo.com/12e7ec7310fee975bc9f2eb1621d6145.png",
-  "https://i.gyazo.com/4be7cfbb10dbdbba57f1388865cf6759.png",
-  "https://i.gyazo.com/3cf5a7d371b382c09c2de707515ab250.png",
-  "https://i.gyazo.com/d82fcdcd76c81aeec8077162abf21b6b.png",
-  "https://i.gyazo.com/4a7203e6b3b54a5f38ac4c4020104c9c.png",
-  "https://i.gyazo.com/ae8e5efc68b221a4321597c3e152fc90.png",
-  "https://i.gyazo.com/f583d08f717d84d97747547c75e0da64.png",
-  "https://i.gyazo.com/db030b45cbc759418719deb3f46cca39.png"
+  "笑",
+  "わか る！",
+  "わか らん",
+  "たし かに",
+  "そう かな",
+  "すご い！",
+  "いい 話だ",
+  "ひえ ぇ〜",
+  "なる ほど",
+  "まじ かよ",
+  "気に なる",
+  "知っ てた",
+  "感動 した",
+  "わかる らんど"
 ];
 
 // connect Socket.IO & Linda
@@ -166,9 +167,12 @@ const appendStampCell = (value, append_last) => {
 
   const delete_button = document.createElement("img");
   delete_button.setAttribute("class", "cell_delete_button");
-  delete_button.setAttribute("width", "20px");
+  delete_button.setAttribute("width", "14px");
   delete_button.setAttribute("src", "images/delete.png");
   delete_button.addEventListener("mousedown", (event) => {
+    event.stopPropagation();
+  });
+  delete_button.addEventListener("mouseup", (event) => {
     displayDeleteDialog(value);
     event.stopPropagation();
   });
@@ -315,12 +319,8 @@ const appendStampFromLocalStorage = (() => {
 })();
 
 // 各ボタンのlistener
-document.getElementById("image_url_text_box").addEventListener("keypress", function () {
+document.getElementById("image_url_text_box").addEventListener("keypress", function (e) {
   if(e.which && e.which === 13 || e.keyCode && e.keyCode === 13) {
     addStampFromTextBox();
   }
 }, false);
-
-document.getElementById("image_url_add_button").addEventListener("click", function () {
-  addStampFromTextBox();
-});

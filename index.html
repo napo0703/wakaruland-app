@@ -12,8 +12,9 @@
   <div id="name_input">
     @<input type="text" id="name_text_box" placeholder="Twitterアカウント名">
   </div>
-  <input type="text" id="image_url_text_box" placeholder="テキスト、または追加したい画像のURL">
-  <button type="button" id="image_url_add_button">追加</button>
+  <div id="add_img_input">
+    <input type="text" id="image_url_text_box" placeholder="テキスト、または追加したい画像のURL">
+  </div>
 </div>
 <div id="console_reaction">
   <div id="console_reaction_view">
@@ -23,9 +24,6 @@
     </div>
   </div>
   <div id="stamp_grid_view"></div>
-</div>
-<div id="copyright">
-  <a target="_blank" href="https://github.com/napo0703/WakaruLand">GitHub</a>
 </div>
 <script src="https://linda-server.herokuapp.com/socket.io/socket.io.js"></script>
 <script src="https://linda-server.herokuapp.com/linda/linda.js"></script>
