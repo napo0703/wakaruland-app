@@ -1,7 +1,12 @@
 # wakaruland-app
 
-[わかるらんど](https://github.com/napo0703/wakaruland) のデスクトップアプリケーション
-<img src="https://i.gyazo.com/f5a573850d4ef500fdbd805a84889b10.gif" width="480">
+[わかるらんど](https://github.com/napo0703/wakaruland) のデスクトップアプリケーション  
+
+<img src="https://i.gyazo.com/ce53cd7df18ae6d88e9e201c1b3975e3.gif" width="480">
+
+## ダウンロード
+
+[WakaruLand-darwin-x64.zip](https://github.com/napo0703/wakaruland-app/releases/)
 
 ## 開発
 
