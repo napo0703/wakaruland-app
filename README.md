@@ -6,7 +6,7 @@
 
 ## ダウンロード
 
-[WakaruLand-darwin-x64.zip](https://github.com/napo0703/wakaruland-app/releases/)
+[Latest release](https://github.com/napo0703/wakaruland-app/releases/latest)
 
 ## 開発
 
