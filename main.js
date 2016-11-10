@@ -7,9 +7,9 @@ const mb = menubar({
 mb.on('ready', function ready () {
   console.log('app is ready')
   const template = [{
-      label: "WakaruLand",
+      label: "わかるらんど",
       submenu: [
-          { label: "About WakaruLand", selector: "orderFrontStandardAboutPanel:" },
+          { label: "About わかるらんど", selector: "orderFrontStandardAboutPanel:" },
           { type: "separator" },
           { label: "Quit", accelerator: "Command+Q", click: function() { app.quit(); }}
       ]}, {
