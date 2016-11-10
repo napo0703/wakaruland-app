@@ -8,8 +8,11 @@
 
 [Latest release](https://github.com/napo0703/wakaruland-app/releases/latest)
 
+- Macの場合はWakaruLand.appを右クリックして「開く」で起動してください
+- メニューを表示した状態で⌘Qを押すと終了できます
+
 ## 開発
 
 - `npm install` で依存ライブラリのインストール
 - `npm start` で実行
-- `npm run build` で.app生成
+- `npm run build` で.appと.exe生成
