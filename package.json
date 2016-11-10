@@ -12,7 +12,7 @@
     "electron-prebuilt": "^1.4.5"
   },
   "scripts": {
-    "build": "electron-packager . わかるらんど --platform=darwin,win32 --arch=x64 --version=1.4.5 --icon=Icon.icns",
+    "build": "electron-packager . WakaruLand --platform=darwin,win32 --arch=x64 --version=1.4.5 --icon=Icon.icns",
     "start": "electron ."
   }
 }
