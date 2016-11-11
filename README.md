@@ -11,6 +11,13 @@
 - Macの場合はWakaruLand.appを右クリックして「開く」で起動してください
 - メニューを表示した状態で⌘Qを押すと終了できます
 
+### 動作環境
+
+- Mac
+  - 10.12(Sierra)、10.11(El Capitan)、10.10(Yosemite)で動作を確認しています
+- Windows
+  - Windows 10 64bitで動作を確認しています
+
 ## 開発
 
 - `npm install` で依存ライブラリのインストール
