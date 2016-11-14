@@ -16,7 +16,17 @@ const default_icons = [
   "気に なる",
   "知っ てた",
   "感動 した",
-  "わかる らんど"
+  "わかる らんど",
+  "https://i.gyazo.com/e2c6447f25b7c62493552c961c76b1dc.png",
+  "https://i.gyazo.com/a4e8bb44169a9c0a18b44ad5da8237c9.png",
+  "https://i.gyazo.com/25031cf91e73064ea598acffc06329e5.png",
+  "https://i.gyazo.com/b3fe7da8b0d1cbcc5d0281f62793f9ec.png",
+  "https://i.gyazo.com/29ac85aa59d449c469cf4eb6e024bf56.png",
+  "https://i.gyazo.com/9ac0affa9aa678cb770a0ec86803448c.png",
+  "https://i.gyazo.com/55bd9a9ef15d6081bb4631775d87b6c4.png",
+  "https://i.gyazo.com/8eab48a46b9bab8e43eb66a47a72d06b.png",
+  "https://i.gyazo.com/427c8babba2b3e7561cf752001edaceb.png",
+  "https://i.gyazo.com/ce7439e27c5e4049c8b3d2a7227a396f.png"
 ];
 
 // connect Socket.IO & Linda
