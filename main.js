@@ -1,7 +1,7 @@
 const {app, Menu} = require('electron')
 const menubar = require('menubar')
 const mb = menubar({
-  width: 335, height: 450
+  width: 335, height: 640
 })
 
 mb.on('ready', function ready () {
