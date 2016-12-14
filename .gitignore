@@ -1,8 +1,8 @@
 .DS_Store
-WakaruLand-darwin-x64
-WakaruLand-darwin-x64.zip
-WakaruLand-win32-x64
-WakaruLand-win32-x64.zip
+wakaruland-menubar-darwin-x64
+wakaruland-menubar-darwin-x64.zip
+wakaruland-menubar-win32-x64
+wakaruland-menubar-win32-x64.zip
 node_modules
 .idea
 wakaruland-menubar.iml

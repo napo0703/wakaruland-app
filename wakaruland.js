@@ -419,6 +419,10 @@ document.getElementById("image_url_text_box").addEventListener("keydown", functi
   }
 });
 
+document.getElementById("image_url_add_button").addEventListener("click", () => {
+  addStampFromTextBox();
+});
+
 document.getElementById("reload_button").addEventListener("click", () => {
   location.reload();
 });

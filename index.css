@@ -53,7 +53,12 @@ body {
 
 #image_url_text_box {
   float: left;
-  width: 320px;
+  width: 260px;
+}
+
+#image_url_add_button {
+  float: left;
+  margin-left: 8px;
 }
 
 #image_url_add_button {
