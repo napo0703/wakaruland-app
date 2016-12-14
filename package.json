@@ -12,7 +12,8 @@
     "electron-prebuilt": "^1.4.5"
   },
   "scripts": {
-    "build": "electron-packager . WakaruLand --platform=darwin,win32 --arch=x64 --version=1.4.5 --icon=Icon.icns",
+    "build-mac": "electron-packager . WakaruLand --platform=darwin --arch=x64 --version=1.4.5 --icon=Icon.icns",
+    "build-windows": "electron-packager . WakaruLand --platform=win32 --arch=x64 --version=1.4.5 --icon=Icon.ico",
     "start": "electron ."
   }
 }
